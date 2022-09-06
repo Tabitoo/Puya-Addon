@@ -1,1 +1,0 @@
-{"id":"9d6f49b0-e154-41c7-b7a5-848125ffa123","space":30561,"runtime":"nodejs14.x","name":"Puya-Addon","path":"ayoh8n","project":"e0bdq4v9","account":"144798365827","region":"sa-east-1","deps":["deta@^1.1.0","stremio-addon-sdk@^1.6.5","express@^4.18.1"],"envs":null,"public":true,"log_level":"debug","cron":""}
