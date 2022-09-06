@@ -10,14 +10,10 @@ const db = deta.Base("puyasubs-hash")
 const builder = new addonBuilder({
     id: 'org.myexampleaddon',
     version: '1.0.0',
-
     name: 'simple example',
-
-    // Properties that determine when Stremio picks this addon
-    // this means your addon will be used for streams of the type movie
 	catalogs : [],
     resources: ['stream'],
-    types: ['anime', 'movie', 'series'],
+    types: ['anime', 'series'],
     idPrefixes: ['kitsu']
 })
 
@@ -39,13 +35,9 @@ builder.defineStreamHandler(async function(args) {
 				streams.push({infoHash: animeData.hash, description: animeData.title, name: 'Puya-Addon'})
 			})
 
-			return Promise.resolve({streams: streams})
-		} else {
+		} 
 
-		return Promise.resolve({ streams: streams })
-
-		}
-
+		return Promise.resolve({streams: streams})
 	}
 
 })
